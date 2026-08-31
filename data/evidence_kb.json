@@ -1,0 +1,156 @@
+[
+  {
+    "id": "fraudulent_1",
+    "reason_code": "fraudulent",
+    "evidence_type": "avs_cvv_match",
+    "title": "AVS and CVV verification match",
+    "text": "For fraud disputes, provide proof that the transaction's Address Verification System (AVS) result and CVV check both returned a match at the time of authorization. This shows the card details entered matched the cardholder's actual billing information, which strongly undermines a claim that the transaction was unauthorized."
+  },
+  {
+    "id": "fraudulent_2",
+    "reason_code": "fraudulent",
+    "evidence_type": "device_ip_history",
+    "title": "Device fingerprint and IP history",
+    "text": "Submit device fingerprint and IP address logs showing the transaction was made from a device or location consistent with the cardholder's prior legitimate purchase history. Repeat use of the same device or a geographically consistent IP weakens a fraud claim."
+  },
+  {
+    "id": "fraudulent_3",
+    "reason_code": "fraudulent",
+    "evidence_type": "prior_undisputed_transactions",
+    "title": "History of undisputed prior transactions",
+    "text": "Provide a record of prior transactions from the same card or account that were completed without any dispute. A pattern of legitimate, undisputed use suggests the current transaction was authorized by the same cardholder."
+  },
+  {
+    "id": "fraudulent_4",
+    "reason_code": "fraudulent",
+    "evidence_type": "delivery_to_verified_address",
+    "title": "Delivery to cardholder's verified address",
+    "text": "If physical goods were involved, show that the order was shipped to the address on file for the cardholder, ideally the same address verified by AVS. Fraudulent transactions are far more likely to ship to a different, unverified address."
+  },
+  {
+    "id": "product_not_received_1",
+    "reason_code": "product_not_received",
+    "evidence_type": "tracking_confirmation",
+    "title": "Shipment tracking with delivery confirmation",
+    "text": "Provide the courier tracking number and its final status showing successful delivery, including the delivery date and, where available, GPS or address confirmation at the point of delivery."
+  },
+  {
+    "id": "product_not_received_2",
+    "reason_code": "product_not_received",
+    "evidence_type": "signed_delivery_proof",
+    "title": "Signed proof of delivery",
+    "text": "If the courier captured a signature or photo at delivery, include it. Signed proof of delivery is one of the strongest forms of evidence against a product-not-received claim."
+  },
+  {
+    "id": "product_not_received_3",
+    "reason_code": "product_not_received",
+    "evidence_type": "customer_communication",
+    "title": "Post-delivery customer communication",
+    "text": "Include any customer service correspondence after the delivery date, especially messages where the customer acknowledged receipt, asked about product use, or contacted support for a reason unrelated to non-delivery."
+  },
+  {
+    "id": "product_unacceptable_1",
+    "reason_code": "product_unacceptable",
+    "evidence_type": "product_description_match",
+    "title": "Original product listing and description",
+    "text": "Provide the exact product listing shown to the customer at time of purchase, including images, specifications, and terms, to demonstrate the delivered item matched what was advertised and agreed to."
+  },
+  {
+    "id": "product_unacceptable_2",
+    "reason_code": "product_unacceptable",
+    "evidence_type": "return_policy_acknowledgment",
+    "title": "Return and refund policy shown at checkout",
+    "text": "Show the return/refund policy that was presented to the customer at checkout, and whether the customer followed (or failed to follow) that process before filing the dispute."
+  },
+  {
+    "id": "product_unacceptable_3",
+    "reason_code": "product_unacceptable",
+    "evidence_type": "quality_inspection_record",
+    "title": "Quality control or inspection record",
+    "text": "If available, include internal quality control records showing the specific item passed inspection before shipment, undermining a claim that the product was defective or not as described."
+  },
+  {
+    "id": "duplicate_processing_1",
+    "reason_code": "duplicate_processing",
+    "evidence_type": "transaction_id_comparison",
+    "title": "Side-by-side transaction ID comparison",
+    "text": "Provide the unique transaction/authorization IDs, timestamps, and amounts for both charges in question to show they were either genuinely separate legitimate transactions or, if a true duplicate occurred, that it has already been refunded."
+  },
+  {
+    "id": "duplicate_processing_2",
+    "reason_code": "duplicate_processing",
+    "evidence_type": "order_details_distinct",
+    "title": "Distinct order or line-item details",
+    "text": "If the two charges correspond to separate orders (not a true duplicate), show the distinct order numbers, items, or dates that differentiate them."
+  },
+  {
+    "id": "credit_not_processed_1",
+    "reason_code": "credit_not_processed",
+    "evidence_type": "refund_transaction_record",
+    "title": "Refund transaction record and timestamp",
+    "text": "Provide the refund transaction ID, amount, and processing timestamp showing the credit was issued to the original payment method, along with typical bank posting timeframes for that payment method."
+  },
+  {
+    "id": "credit_not_processed_2",
+    "reason_code": "credit_not_processed",
+    "evidence_type": "refund_policy_terms",
+    "title": "Refund policy and processing time terms",
+    "text": "Include the refund policy terms shown to the customer, particularly stated processing timeframes, to show the refund (if delayed but issued) was still within the agreed window."
+  },
+  {
+    "id": "subscription_canceled_1",
+    "reason_code": "subscription_canceled",
+    "evidence_type": "cancellation_request_log",
+    "title": "Record of cancellation request (or lack thereof)",
+    "text": "Provide logs showing whether and when a cancellation request was received through the platform, versus the date of the disputed charge, to establish whether the subscription was active at time of billing."
+  },
+  {
+    "id": "subscription_canceled_2",
+    "reason_code": "subscription_canceled",
+    "evidence_type": "terms_of_service_acceptance",
+    "title": "Terms of service and billing cycle acceptance",
+    "text": "Include proof the customer accepted terms of service describing the subscription's auto-renewal terms and cancellation process at signup."
+  },
+  {
+    "id": "subscription_canceled_3",
+    "reason_code": "subscription_canceled",
+    "evidence_type": "usage_after_cancellation_date",
+    "title": "Service usage after claimed cancellation date",
+    "text": "If the customer used the service after their claimed cancellation date, provide usage logs demonstrating continued active use, which weakens the claim that the subscription had already ended."
+  },
+  {
+    "id": "unrecognized_1",
+    "reason_code": "unrecognized",
+    "evidence_type": "descriptor_match",
+    "title": "Billing descriptor consistency",
+    "text": "Show the exact billing descriptor that appeared on the cardholder's statement and confirm it matches the merchant's registered descriptor, helping the cardholder recognize the charge."
+  },
+  {
+    "id": "unrecognized_2",
+    "reason_code": "unrecognized",
+    "evidence_type": "order_confirmation_email",
+    "title": "Order confirmation sent to customer",
+    "text": "Provide the order confirmation email or SMS sent to the customer at time of purchase, including recipient contact details matching the account on file."
+  },
+  {
+    "id": "unrecognized_3",
+    "reason_code": "unrecognized",
+    "evidence_type": "account_login_correlation",
+    "title": "Account login correlated with purchase",
+    "text": "Show that the purchase was made while the customer's account was logged in, correlating account activity with the transaction timestamp."
+  },
+  {
+    "id": "processed_invalid_expired_card_1",
+    "reason_code": "processed_invalid_expired_card",
+    "evidence_type": "authorization_response_code",
+    "title": "Authorization response code at time of sale",
+    "text": "Provide the authorization response code returned by the card network at the time of the transaction, showing the card was valid and active at that time regardless of its status now."
+  },
+  {
+    "id": "processed_invalid_expired_card_2",
+    "reason_code": "processed_invalid_expired_card",
+    "evidence_type": "expiry_date_on_file",
+    "title": "Card expiry date on file at time of transaction",
+    "text": "Show the expiry date on file used for the transaction and confirm it was within validity at the time of authorization, distinguishing from any later expiry."
+  }
+]

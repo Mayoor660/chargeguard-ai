@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:16
+    container_name: chargeguard-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: chargeguard
+      POSTGRES_PASSWORD: chargeguard_dev_pw
+      POSTGRES_DB: chargeguard
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    container_name: chargeguard-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+volumes:
+  pgdata:
