@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, Float, DateTime, Text
 from sqlalchemy.sql import func
 
 from chargeguard.core.database import Base
-
+from chargeguard.services.evidence_composer import retrieve_evidence, validate_letter
 
 class Dispute(Base):
     __tablename__ = "disputes"
